@@ -13,8 +13,8 @@ This is Offer Man, a simple Llama3-8B-based project designed to help voiceover a
 ## Installation
 
 The following things must be installed to run Offer Man:
-- Python3
-- Ollama with the Llama3 8B parameter model.
+- [Python3](https://docs.python-guide.org/starting/install3/osx/)
+- [Ollama](https://github.com/ollama/ollama/tree/main) with the Llama3 8B parameter model.
 
 ## Running Offer Man
 
@@ -24,6 +24,13 @@ The following things must be installed to run Offer Man:
     ```bash
     python3 path/to/offerman.py
     ```
+## Adjusting Offer Man to Your Needs
+
+There are two ways to adjust Offer Man's behavior: the model and the prompt.
+
+Adjusting the Modelfile will fundamentally change what the LLM thinks of itself. This is good for adjusting its general relationship with you—if you're not a voiceover artist, for example.
+
+In offerman.py on line 24, you can find the prompt that the LLM receives after being given the CSV. This is a good place to adjust what it outputs. Don't like that it gives you a suggestion of what to send your client? Change that here!
 
 ## Troubleshooting
 
